@@ -1,0 +1,42 @@
+html {
+  font-family: Helvetica, sans-serif;
+  background: #282c34;
+  color: #C4C9D2;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+p, li {
+  font-size: 19px;
+}
+
+ol, ul {
+  padding-left: 34px;
+}
+
+.list_header {
+  margin-bottom: -8px;
+}
+
+h2 {
+  margin-bottom: -6px;
+  margin-top: 30px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: #61afef;
+}
+
+a:visited {
+  color: #c678dd;
+}
+
+a:active {
+  color: #e06c75;
+}
