@@ -4,13 +4,15 @@ html {
   color: #C4C9D2;
   margin-top: 30px;
   margin-bottom: 40px;
-  margin-left: 2%;
-  margin-right: 2%;
   font-size: 19px;
 }
 
+body {
+  margin: 0;
+}
+
 .container {
-  width: 90%;
+  width: 86%;
   margin: auto;
 }
 
@@ -28,6 +30,17 @@ ol, ul {
   padding-left: 34px;
 }
 
+footer {
+  background-color: #1A1D22;
+  height: 100%;
+  padding-top: 8px;
+  padding-bottom: 5px;
+}
+
+footer div {
+  width: 86%;
+  margin: auto;
+}
 
 h2 {
   margin-bottom: -6px;
