@@ -6,6 +6,7 @@ html {
   margin-bottom: 30px;
   margin-left: 25px;
   margin-right: 25px;
+  font-size: 19px;
 }
 
 p, li {
@@ -23,6 +24,10 @@ ol, ul {
 h2 {
   margin-bottom: -6px;
   margin-top: 30px;
+}
+
+h3 {
+  margin-bottom: -6px;
 }
 
 a {
