@@ -9,6 +9,17 @@ html {
   font-size: 19px;
 }
 
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.box {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 20px;
+}
+
 p, li {
   font-size: 19px;
 }
@@ -17,9 +28,6 @@ ol, ul {
   padding-left: 34px;
 }
 
-.list_header {
-  margin-bottom: -8px;
-}
 
 h2 {
   margin-bottom: -6px;
