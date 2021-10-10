@@ -19,7 +19,7 @@ body {
 .box {
   display: inline-block;
   vertical-align: top;
-  margin-right: 20px;
+  margin-right: 25px;
 }
 
 p, li {
@@ -33,8 +33,8 @@ ol, ul {
 footer {
   background-color: #1A1D22;
   height: 100%;
-  padding-top: 8px;
-  padding-bottom: 5px;
+  padding-top: 12px;
+  padding-bottom: 8px;
 }
 
 footer div {
