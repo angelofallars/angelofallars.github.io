@@ -50,11 +50,12 @@ a {
   text-decoration: none;
 }
 
-a:link {
+a:link, a:visited {
   color: #61afef;
+  transition: all 0.25s ease-out;
 }
 
-a:visited {
+a:hover {
   color: #c678dd;
 }
 
