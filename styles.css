@@ -11,8 +11,9 @@ body {
 }
 
 .container {
-  width: 86%;
-  margin: auto;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 4%;
 }
 
 .box {
