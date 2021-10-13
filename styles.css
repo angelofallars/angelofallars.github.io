@@ -16,9 +16,15 @@ body {
   padding: 0 4%;
 }
 
+.list_box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
 .box {
-  display: inline-block;
-  vertical-align: top;
+  /* display: inline-block;*/
+  /*vertical-align: top;*/
   margin-right: 25px;
 }
 
