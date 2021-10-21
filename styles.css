@@ -2,11 +2,7 @@ html {
   font-family: Helvetica, sans-serif;
   background: #282c34;
   color: #C4C9D2;
-  margin-top: 30px;
   font-size: 19px;
-}
-
-body {
   margin: 0;
 }
 
@@ -14,6 +10,8 @@ body {
   max-width: 700px;
   margin: 0 auto;
   padding: 0 4%;
+  display: flex;
+  flex-direction: column;
 }
 
 .list_box {
@@ -48,6 +46,25 @@ h2 {
 
 h3 {
   margin-bottom: -6px;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.projects__project {
+  display: flex;
+  flex-direction: column;
+}
+
+.projects__project p {
+  margin: 12px 0 8px 0;
+}
+
+.project__tech {
+  margin-top: 0px;
 }
 
 a {
