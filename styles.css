@@ -1,17 +1,26 @@
+body {
+  margin: 0;
+}
+
 html {
   font-family: Helvetica, sans-serif;
   background: #282c34;
   color: #C4C9D2;
-  font-size: 19px;
+  font-size: 21px;
   margin: 0;
 }
 
 .container {
-  max-width: 700px;
+  max-width: 720px;
   margin: 0 auto;
   padding: 0 4%;
   display: flex;
   flex-direction: column;
+  gap: 0px;
+}
+
+.container h1 {
+  margin-bottom: 5px;
 }
 
 .list_box {
@@ -22,10 +31,6 @@ html {
 
 .box {
   margin-right: 25px;
-}
-
-p, li {
-  font-size: 19px;
 }
 
 ol, ul {
