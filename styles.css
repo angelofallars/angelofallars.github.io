@@ -29,7 +29,7 @@ html {
   gap: 8px;
 }
 
-.box {
+.list_box__box {
   margin-right: 25px;
 }
 
@@ -87,4 +87,15 @@ a:hover {
 
 a:active {
   color: #e06c75;
+}
+
+@media only screen and (max-width: 600px) {
+  .list_box {
+    flex-flow: column wrap;
+    gap: 0px;
+  }
+
+  .list_box__box h2 {
+    margin: 5px 0;
+  }
 }
