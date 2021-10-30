@@ -130,7 +130,15 @@ a:hover {
   color: $onedark-blue-light;
 }
 
+.footer-break {
+  display: none;
+}
+
 @media only screen and (max-width: 700px) {
+  .info h1 {
+    margin-top: 8px;
+  }
+
   .container {
     flex-direction: column;
     align-items: center;
@@ -142,5 +150,10 @@ a:hover {
 
   footer {
     text-align: center;
+    margin-top: 2px;
+  }
+
+  .footer-break {
+    display: inline
   }
 }
