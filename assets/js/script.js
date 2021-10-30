@@ -23,7 +23,7 @@ function createProjectEntry(projectEntry) {
   let linkAnchor = `<i class="fab fa-github"></i> <a href="${projectEntry.githubLink}">${projectEntry.githubName}</a>`;
 
   title.textContent = projectEntry.title;
-  body.textContent = projectEntry.body;
+  body.insertAdjacentHTML('afterbegin', projectEntry.body);
   tech.textContent = projectEntry.tech;
   tech.insertAdjacentHTML('afterbegin', hammer);
   link.insertAdjacentHTML('afterbegin', linkAnchor);
@@ -38,7 +38,8 @@ function createProjectEntry(projectEntry) {
 
 
 const projects = [new Project("Landing Page - buymeacoffee.js",
-                              "Main page for the official Node.js API wrapper for Buy Me A Coffee.",
+                              "Main page for the official Node.js API wrapper for Buy Me A Coffee. \
+Deployed on the <a href='https://buymeacoffee.js.org/'>JS.ORG</a> domain.",
                               "HTML, CSS, JavaScript",
                               "WarenGonzaga/buymeacoffee.js",
                               "https://github.com/WarenGonzaga/buymeacoffee.js"),
@@ -52,11 +53,6 @@ const projects = [new Project("Landing Page - buymeacoffee.js",
                               "Python",
                               "angelofallars/pomoff",
                               "https://github.com/angelofallars/pomoff"),
-                  new Project("Felish",
-                              "Minimalist Unix shell with amusing features.",
-                              "C",
-                              "angelofallars/felish",
-                              "https://github.com/angelofallars/felish"),
 ];
 
 for (let i = 0; i < projects.length; i++) {
