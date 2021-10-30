@@ -1,12 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,700&display=swap');
+
 body {
   margin: 0;
 }
 
 html {
-  font-family: Helvetica, sans-serif;
+  font-family: "Roboto Mono", monospace;
   background: #282c34;
   color: #C4C9D2;
-  font-size: 21px;
+  font-size: 1.0em;
   margin: 0;
 }
 
@@ -33,6 +35,10 @@ html {
   margin-right: 25px;
 }
 
+.list_box__box ul {
+  padding-left: 46px;
+}
+
 ol, ul {
   padding-left: 34px;
 }
@@ -47,6 +53,13 @@ footer {
 h2 {
   margin-bottom: -3px;
   margin-top: 30px;
+}
+
+
+/* Font Awesome icons */
+.fab, .fas {
+  width: 1.1em;
+  text-align: center;
 }
 
 h3 {
@@ -66,10 +79,6 @@ h3 {
 
 .projects__project p {
   margin: 12px 0 8px 0;
-}
-
-.project__tech {
-  margin-top: 0px;
 }
 
 a {
