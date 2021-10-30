@@ -1,4 +1,4 @@
-const projectsContainer = document.querySelector(".projects");
+const projectsContainer = document.querySelector(".project-entries");
 
 class Project {
   constructor(title, body, techUsed, githubName, githubLink) {
@@ -17,7 +17,7 @@ function createProjectEntry(projectEntry) {
   const tech = document.createElement("div");
   const link = document.createElement("div");
 
-  projectContainer.classList.add("projects__project");
+  projectContainer.classList.add("project-entries__project");
 
   let hammer = '<i class="fas fa-hammer"></i> '
   let linkAnchor = `<i class="fab fa-github"></i> <a href="${projectEntry.githubLink}">${projectEntry.githubName}</a>`;
@@ -37,22 +37,28 @@ function createProjectEntry(projectEntry) {
 }
 
 
-const projects = [new Project("Landing Page - buymeacoffee.js",
-                              "Main page for the official Node.js API wrapper for Buy Me A Coffee. \
+const projects = [new Project(
+                    "Landing Page - buymeacoffee.js",
+                    "Main page for the official Node.js API wrapper for Buy Me A Coffee. \
 Deployed on the <a href='https://buymeacoffee.js.org/'>JS.ORG</a> domain.",
-                              "HTML, CSS, JavaScript",
-                              "WarenGonzaga/buymeacoffee.js",
-                              "https://github.com/WarenGonzaga/buymeacoffee.js"),
-                  new Project("Mathmouse",
-                              "Discord bot for fun math quizzes built with the discord.py API wrapper.",
-                              "Python, Heroku",
-                              "angelofallars/mathmouse",
-                              "https://github.com/angelofallars/mathmouse"),
-                  new Project("Pomoff",
-                              "Lightweight and configurable Pomodoro timer built in Python.",
-                              "Python",
-                              "angelofallars/pomoff",
-                              "https://github.com/angelofallars/pomoff"),
+                    "HTML, CSS, JavaScript",
+                    "WarenGonzaga/buymeacoffee.js",
+                    "https://github.com/WarenGonzaga/buymeacoffee.js"
+                  ),
+                  new Project(
+                    "Mathmouse",
+                    "Discord bot for fun math quizzes built with the discord.py API wrapper.",
+                    "Python, Heroku",
+                    "angelofallars/mathmouse",
+                    "https://github.com/angelofallars/mathmouse"
+                  ),
+                  new Project(
+                    "Pomoff",
+                    "Lightweight and configurable Pomodoro timer built in Python.",
+                    "Python",
+                    "angelofallars/pomoff",
+                    "https://github.com/angelofallars/pomoff"
+                  ),
 ];
 
 for (let i = 0; i < projects.length; i++) {
