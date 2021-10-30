@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,700&display=swap');
 
-$bg-primary: #282c34;
-$fg-primary: #C4C9D2;
+$bg-primary: #282D38;
+$bg-secondary: #1B1F26;
+$fg-primary: #d8dee9;
 
-$onedark-red:     #E06B74;
-$onedark-green:   #98C379;
-$onedark-yellow:  #E5C07A;
-$onedark-blue:    #62AEEF;
-$onedark-magenta: #C778DD;
+$nord-red:     #bf616a;
+$nord-green:   #a3be8c;
+$nord-yellow:  #ebcb8b;
+$nord-blue:    #88C0D0;
+$nord-magenta: #b48ead;
 
-$onedark-blue-light: #97CFFF;
+$nord-blue-light: #9BD0DF;
 
 $page-width: 850px;
 
@@ -56,7 +57,8 @@ body {
 }
 
 footer {
-  background-color: #1A1D22;
+  background-color: $bg-secondary;
+  color: $nord-green;
   min-height: 20px;
   width: 100%;
   bottom: 0;
@@ -123,11 +125,11 @@ a {
 }
 
 a:link, a:visited {
-  color: $onedark-blue;
+  color: $nord-blue;
 }
 
 a:hover {
-  color: $onedark-blue-light;
+  color: $nord-blue-light;
 }
 
 .footer-break {

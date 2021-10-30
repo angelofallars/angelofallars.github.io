@@ -1,5 +1,3 @@
-const projectsContainer = document.querySelector(".project-entries");
-
 class Project {
   constructor(title, body, techUsed, githubName, githubLink) {
     this.title = title;
@@ -36,7 +34,6 @@ function createProjectEntry(projectEntry) {
   projectsContainer.appendChild(projectContainer);
 }
 
-
 const projects = [new Project(
                     "Landing Page - buymeacoffee.js",
                     "Main page for the official Node.js API wrapper for Buy Me A Coffee. \
@@ -60,6 +57,8 @@ Deployed on the <a href='https://buymeacoffee.js.org/'>JS.ORG</a> domain.",
                     "https://github.com/angelofallars/pomoff"
                   ),
 ];
+
+const projectsContainer = document.querySelector(".project-entries");
 
 for (let i = 0; i < projects.length; i++) {
   createProjectEntry(projects[i]);
