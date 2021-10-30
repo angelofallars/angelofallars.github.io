@@ -34,7 +34,7 @@ body {
   margin: 15px auto 0 auto;
   padding: 0 4%;
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: row;
   gap: 15px;
   flex: 1 0 auto;
 }
@@ -68,7 +68,7 @@ footer {
 .footer-container {
   max-width: $page-width;
   margin: 0 auto;
-  padding: 0 4%;
+  padding: 0 5%;
   display: flex;
   flex-direction: column;
 }
