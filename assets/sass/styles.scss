@@ -1,14 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,700&display=swap');
 
-$bg-primary: #282D38;
-$bg-secondary: #1B1F26;
-$fg-primary: #d8dee9;
+$bg-primary:      #282D38;
+$bg-secondary:    #1B1F26;
+$fg-primary:      #d8dee9;
+$fg-primary-soft: #BCC1CB;
 
 $nord-red:     #bf616a;
 $nord-green:   #a3be8c;
 $nord-yellow:  #ebcb8b;
 $nord-blue:    #88C0D0;
 $nord-magenta: #b48ead;
+
+$nord7:  #8fbcbb;
+$nord8:  #88c0d0;
+$nord9:  #81a1c1;
+$nord10: #5e81ac;
 
 $nord-blue-light: #9BD0DF;
 
@@ -44,7 +50,7 @@ body {
   max-width: 400px;
 }
 
-.info {
+.info, .projects {
   flex: 1;
 }
 
