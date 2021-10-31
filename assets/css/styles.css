@@ -29,7 +29,7 @@ body {
   max-width: 400px;
 }
 
-.info {
+.info, .projects {
   flex: 1;
 }
 
@@ -72,6 +72,7 @@ h3 {
 .fab, .fas {
   width: 1.1em;
   text-align: center;
+  color: #88C0D0;
 }
 
 .info__title, .projects__title {
@@ -101,14 +102,16 @@ h3 {
 
 a {
   text-decoration: none;
+  border-bottom: 1px dashed #BCC1CB;
 }
 
 a:link, a:visited {
-  color: #88C0D0;
+  color: #d8dee9;
 }
 
 a:hover {
-  color: #9BD0DF;
+  color: #88c0d0;
+  border-bottom: 1px dashed #88c0d0;
 }
 
 .footer-break {
