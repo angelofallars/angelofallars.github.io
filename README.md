@@ -1,6 +1,6 @@
 # Portfolio Page
 
-Page for my portfolio, built with HTML, JavaScript and Sass. 
+Page for my portfolio, built with JavaScript and Sass. 
 
-Inspired by [Niclas'](https://github.com/buffet)
+Inspired by [buffet's](https://github.com/buffet)
 [website](https://buffet.sh/).
