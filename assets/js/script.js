@@ -36,7 +36,7 @@ function createProjectEntry(projectEntry) {
 
 const projects = [new Project(
                     "Landing Page - buymeacoffee.js",
-                    "Main page for the official Node.js API wrapper for Buy Me A Coffee. \
+                    "Main page for Buy Me A Coffee's official Node.js API wrapper. \
 Deployed on the <a href='https://buymeacoffee.js.org/'>JS.ORG</a> domain.",
                     "HTML, CSS, JavaScript",
                     "WarenGonzaga/buymeacoffee.js",
