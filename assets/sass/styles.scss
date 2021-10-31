@@ -87,6 +87,7 @@ h3 {
 .fab, .fas {
   width: 1.1em;
   text-align: center;
+  color: $nord-blue;
 }
 
 .info__title, .projects__title {
@@ -121,14 +122,16 @@ h3 {
 
 a {
   text-decoration: none;
+  border-bottom: 1px dashed $fg-primary-soft;
 }
 
 a:link, a:visited {
-  color: $nord-blue;
+  color: $fg-primary;
 }
 
 a:hover {
-  color: $nord-blue-light;
+  color: $nord8;
+  border-bottom: 1px dashed $nord8;
 }
 
 .footer-break {
