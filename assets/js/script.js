@@ -34,27 +34,30 @@ function createProjectEntry(projectEntry) {
   projectsContainer.appendChild(projectContainer);
 }
 
-const projects = [new Project(
-                    "Landing Page - buymeacoffee.js",
-                    "Main page for Buy Me A Coffee's official Node.js API wrapper. \
-Deployed on the <a href='https://buymeacoffee.js.org/'>JS.ORG</a> domain.",
-                    "HTML, CSS, JavaScript",
-                    "WarenGonzaga/buymeacoffee.js",
-                    "https://github.com/WarenGonzaga/buymeacoffee.js"
+const projects = [
+                  new Project(
+                    "Landing Page - Axyl",
+                    "Redesigned the website of <a href='https://axyl-os.github.io'>Axyl</a>, \
+                    helping drive more than 500+ downloads.",
+                    "HTML/CSS, Sass, JavaScript",
+                    "axyl-os/axyl-os.github.io",
+                    "https://github.com/axyl-os/axyl-os.github.io"
                   ),
                   new Project(
-                    "Mathmouse",
-                    "Discord bot for fun math quizzes built with the discord.py API wrapper.",
-                    "Python, Heroku",
-                    "angelofallars/mathmouse",
-                    "https://github.com/angelofallars/mathmouse"
+                    "Axyl Stats Bot",
+                    "Developed and deployed a set of services allowing 70+ members in the \
+                    Axyl server to access metrics about the Axyl project (downloads, stars, etc).",
+                    "Python, PostgreSQL",
+                    "angelofallars/axyl-stats",
+                    "https://github.com/angelofallars/axyl-stats"
                   ),
                   new Project(
-                    "Pomoff",
-                    "Lightweight and configurable Pomodoro timer built in Python.",
-                    "Python",
-                    "angelofallars/pomoff",
-                    "https://github.com/angelofallars/pomoff"
+                    "Calculator",
+                    "A simple web-based <a href='https://angelo.is-a.dev/top-calculator/'>calculator</a> app \
+                    built with TypeScript.",
+                    "TypeScript, HTML/CSS",
+                    "angelofallars/top-calculator",
+                    "https://github.com/angelofallars/top-calculator"
                   ),
 ];
 
