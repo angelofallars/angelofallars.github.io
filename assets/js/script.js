@@ -36,9 +36,9 @@ function createProjectEntry(projectEntry) {
 
 const projects = [
                   new Project(
-                    "Landing Page - Axyl",
-                    "Redesigned the website of <a href='https://axyl-os.github.io'>Axyl</a>, \
-                    helping drive more than 500+ downloads.",
+                    "Website - Axyl",
+                    "Designed and deployed the website of <a href='https://axylos.org'>Axyl</a>, \
+                    helping drive more than 700+ downloads.",
                     "HTML/CSS, Sass, JavaScript",
                     "axyl-os/axyl-os.github.io",
                     "https://github.com/axyl-os/axyl-os.github.io"
