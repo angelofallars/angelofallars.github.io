@@ -38,14 +38,14 @@ const projects = [
                   new Project(
                     "Website - Axyl",
                     "Designed and deployed the website of <a href='https://axylos.org'>Axyl</a>, \
-                    helping drive more than 1,000+ downloads.",
+                    helping drive more than 1,200+ downloads.",
                     "HTML/CSS, Sass, JavaScript",
                     "axyl-os/axyl-os.github.io",
                     "https://github.com/axyl-os/axyl-os.github.io"
                   ),
                   new Project(
                     "Axyl Stats Bot",
-                    "Developed and deployed a set of services allowing 90+ members in the \
+                    "Developed and deployed a set of services allowing 100+ members in the \
                     Axyl server to access metrics about the Axyl project (downloads, stars, etc).",
                     "Python, PostgreSQL",
                     "angelofallars/axyl-stats",
@@ -53,7 +53,7 @@ const projects = [
                   ),
                   new Project(
                     "treefetch",
-                    "A lightning-fast system fetch tool for Linux systems built with Rust, with over 100+ downloads.",
+                    "A lightning-fast system fetch tool for Linux systems built with Rust, reaching over 180+ downloads.",
                     "Rust",
                     "angelofallars/treefetch",
                     "https://github.com/angelofallars/treefetch"
