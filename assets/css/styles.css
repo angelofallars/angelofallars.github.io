@@ -119,6 +119,28 @@ h2, h3 {
   position: absolute;
   right: 0;
 }
+.info__cat:hover .info__cat__hover-text {
+  opacity: 1;
+  margin-top: 0;
+}
+
+.info__cat__hover-text {
+  position: absolute;
+  color: #1E1E2E;
+  background-color: #ABE9B3;
+  border-radius: 5px;
+  margin-top: 10px;
+  text-align: center;
+  top: 0;
+  bottom: 0;
+  left: -66px;
+  width: 60px;
+  height: 20px;
+  opacity: 0;
+  user-select: none;
+  transition: all 0.25s;
+  pointer-events: none;
+}
 
 .info__cat-div {
   display: flex;
