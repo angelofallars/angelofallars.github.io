@@ -1,6 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,700&display=swap");
 html {
-  font-family: "Roboto Mono", monospace;
+  font-family: "JetBrains Mono", monospace;
   background: #1E1E2E;
   color: #D3C9D6;
   font-size: 1em;
@@ -48,7 +47,7 @@ footer {
 }
 
 h1 {
-  font-size: 28px;
+  font-size: 30px;
   margin: 0 0 3px;
 }
 
@@ -151,6 +150,11 @@ h3 {
   background-color: #1A1826;
   padding: 15px;
   border-radius: 10px;
+}
+
+.emoji {
+  font-family: monospace;
+  font-size: 15px;
 }
 
 a {
