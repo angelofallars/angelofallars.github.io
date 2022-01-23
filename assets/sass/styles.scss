@@ -5,6 +5,7 @@ $fg-primary-soft: #988BA2;
 
 $gray-0:   #6E6C7E;
 $gray-1:   #988BA2;
+$gray-2:   #C3BAC6;
 $black-3:  #302D41;
 $white:    #D9E0EE;
 
@@ -215,39 +216,35 @@ h2, h3 {
     background-color: $bg-secondary;
     padding: 15px;
     border-radius: 10px;
-  }
 
-  .project--blue {
-    $project-color: $blue;
-
-    h3 {
-      color: $project-color;
-    }
-    .fab, .fas {
-      color: $project-color;
+    div, div a {
+      color: $gray-1;
     }
   }
 
-  .project--green {
-    $project-color: $green;
-
+  @mixin project-theme($color: $blue) {
     h3 {
-      color: $project-color;
+      color: $color;
     }
     .fab, .fas {
-      color: $project-color;
+      color: $color;
+    }
+    a:hover {
+      color: $color;
+      border-color: $color;
     }
   }
 
   .project--yellow {
-    $project-color: $yellow;
+    @include project-theme($yellow);
+  }
 
-    h3 {
-      color: $project-color;
-    }
-    .fab, .fas {
-      color: $project-color;
-    }
+  .project--green {
+    @include project-theme($green);
+  }
+
+  .project--blue {
+    @include project-theme($blue);
   }
 
 }

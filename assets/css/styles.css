@@ -171,11 +171,18 @@ h2, h3 {
   padding: 15px;
   border-radius: 10px;
 }
-.project-entries .project--blue h3 {
-  color: #96CDFB;
+.project-entries .project div, .project-entries .project div a {
+  color: #988BA2;
 }
-.project-entries .project--blue .fab, .project-entries .project--blue .fas {
-  color: #96CDFB;
+.project-entries .project--yellow h3 {
+  color: #FAE3B0;
+}
+.project-entries .project--yellow .fab, .project-entries .project--yellow .fas {
+  color: #FAE3B0;
+}
+.project-entries .project--yellow a:hover {
+  color: #FAE3B0;
+  border-color: #FAE3B0;
 }
 .project-entries .project--green h3 {
   color: #ABE9B3;
@@ -183,11 +190,19 @@ h2, h3 {
 .project-entries .project--green .fab, .project-entries .project--green .fas {
   color: #ABE9B3;
 }
-.project-entries .project--yellow h3 {
-  color: #FAE3B0;
+.project-entries .project--green a:hover {
+  color: #ABE9B3;
+  border-color: #ABE9B3;
 }
-.project-entries .project--yellow .fab, .project-entries .project--yellow .fas {
-  color: #FAE3B0;
+.project-entries .project--blue h3 {
+  color: #96CDFB;
+}
+.project-entries .project--blue .fab, .project-entries .project--blue .fas {
+  color: #96CDFB;
+}
+.project-entries .project--blue a:hover {
+  color: #96CDFB;
+  border-color: #96CDFB;
 }
 
 .emoji {
