@@ -150,12 +150,21 @@ h2, h3 {
 .project-entries p {
   margin: 5px 0;
 }
-.project-entries .project-entries__project {
+.project-entries .project {
   display: flex;
   flex-direction: column;
   background-color: #1A1826;
   padding: 15px;
   border-radius: 10px;
+}
+.project-entries .project--blue .fab, .project-entries .project--blue .fas {
+  color: #96CDFB;
+}
+.project-entries .project--green .fab, .project-entries .project--green .fas {
+  color: #ABE9B3;
+}
+.project-entries .project--yellow .fab, .project-entries .project--yellow .fas {
+  color: #FAE3B0;
 }
 
 .emoji {

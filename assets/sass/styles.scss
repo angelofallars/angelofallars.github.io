@@ -198,6 +198,25 @@ h2, h3 {
     padding: 15px;
     border-radius: 10px;
   }
+
+  .project--blue {
+    .fab, .fas {
+      color: $blue;
+    }
+  }
+
+  .project--green {
+    .fab, .fas {
+      color: $green;
+    }
+  }
+
+  .project--yellow {
+    .fab, .fas {
+      color: $yellow;
+    }
+  }
+
 }
 
 // Workaround because the lightning emoji (⚡) is just a font letter
