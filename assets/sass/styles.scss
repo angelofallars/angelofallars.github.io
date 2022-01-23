@@ -95,10 +95,12 @@ h3 {
 }
 
 /* Font Awesome icons */
-.fab, .fas {
-  width: 1.1em;
-  text-align: center;
-  color: $teal;
+.container {
+  .fab, .fas {
+    width: 1.1em;
+    text-align: center;
+    color: $teal;
+  }
 }
 
 .info__title, .projects__title {

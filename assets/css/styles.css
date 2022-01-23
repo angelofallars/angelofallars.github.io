@@ -70,7 +70,7 @@ h3 {
 }
 
 /* Font Awesome icons */
-.fab, .fas {
+.container .fab, .container .fas {
   width: 1.1em;
   text-align: center;
   color: #B5E8E0;
