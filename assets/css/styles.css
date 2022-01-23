@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,700&display=swap");
 html {
   font-family: "Roboto Mono", monospace;
-  background: #282D38;
-  color: #d8dee9;
+  background: #1E1E2E;
+  color: #D3C9D6;
   font-size: 1em;
   margin: 0;
 }
@@ -38,11 +38,11 @@ body {
 }
 
 .container h1 {
-  margin-bottom: 5px;
+  margin-bottom: 3px;
 }
 
 footer {
-  background-color: #1B1F26;
+  background-color: #1A1826;
   min-height: 20px;
   width: 100%;
   bottom: 0;
@@ -72,12 +72,15 @@ h3 {
 .fab, .fas {
   width: 1.1em;
   text-align: center;
-  color: #88C0D0;
+  color: #B5E8E0;
 }
 
 .info__title, .projects__title {
   text-align: center;
   margin-right: 28px;
+}
+.info__title__description, .projects__title__description {
+  color: #988BA2;
 }
 
 .project-entries {
@@ -102,16 +105,16 @@ h3 {
 
 a {
   text-decoration: none;
-  border-bottom: 1px dashed #BCC1CB;
+  border-bottom: 1px dashed #988BA2;
 }
 
 a:link, a:visited {
-  color: #d8dee9;
+  color: #D3C9D6;
 }
 
 a:hover {
-  color: #88c0d0;
-  border-bottom: 1px dashed #88c0d0;
+  color: #B5E8E0;
+  border-bottom: 1px dashed #B5E8E0;
 }
 
 .footer-break {

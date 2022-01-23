@@ -1,22 +1,26 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,700&display=swap');
 
-$bg-primary:      #282D38;
-$bg-secondary:    #1B1F26;
-$fg-primary:      #d8dee9;
-$fg-primary-soft: #BCC1CB;
+$bg-primary:      #1E1E2E;
+$bg-secondary:    #1A1826;
+$fg-primary:      #D3C9D6;
+$fg-primary-soft: #988BA2;
 
-$nord-red:     #bf616a;
-$nord-green:   #a3be8c;
-$nord-yellow:  #ebcb8b;
-$nord-blue:    #88C0D0;
-$nord-magenta: #b48ead;
+$gray-0:   #6E6C7E;
+$gray-1:   #988BA2;
+$white:    #D9E0EE;
 
-$nord7:  #8fbcbb;
-$nord8:  #88c0d0;
-$nord9:  #81a1c1;
-$nord10: #5e81ac;
+$flamingo: #F2CDCD;
+$mauve:    #DDB6F2;
+$red:      #F28FAD;
+$green:    #ABE9B3;
+$yellow:   #FAE3B0;
+$blue:     #96CDFB;
+$pink:     #F5C2E7;
 
-$nord-blue-light: #9BD0DF;
+$teal:         #B5E8E0;
+$sky:          #89DCEB;
+
+$lavender: #C9CBFF;
 
 $page-width: 850px;
 
@@ -59,7 +63,7 @@ body {
 }
 
 .container h1 {
-  margin-bottom: 5px;
+  margin-bottom: 3px;
 }
 
 footer {
@@ -93,13 +97,18 @@ h3 {
 .fab, .fas {
   width: 1.1em;
   text-align: center;
-  color: $nord-blue;
+  color: $teal;
 }
 
 .info__title, .projects__title {
   text-align: center;
   margin-right: 28px;
+
+  &__description {
+    color: $gray-1;
+  }
 }
+
 
 .project-entries {
   display: flex;
@@ -136,8 +145,8 @@ a:link, a:visited {
 }
 
 a:hover {
-  color: $nord8;
-  border-bottom: 1px dashed $nord8;
+  color: $teal;
+  border-bottom: 1px dashed $teal;
 }
 
 .footer-break {
