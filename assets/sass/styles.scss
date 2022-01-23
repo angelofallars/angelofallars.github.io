@@ -130,6 +130,14 @@ h2, h3 {
   display: flex;
   gap: 12px;
   align-items: flex-start;
+
+  a {
+    transition: filter ease-out 0.2s;
+  }
+
+  a:hover {
+    filter: brightness(1.22);
+  }
 }
 
 .info__title__pfp {
@@ -137,11 +145,6 @@ h2, h3 {
   height: auto;
   border-radius: 25%;
   align-self: center;
-  transition: filter ease-out 0.2s;
-
-  &:hover {
-    filter: brightness(1.22);
-  }
 }
 
 .anime {

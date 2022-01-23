@@ -97,16 +97,18 @@ h2, h3 {
   gap: 12px;
   align-items: flex-start;
 }
+.info__title a {
+  transition: filter ease-out 0.2s;
+}
+.info__title a:hover {
+  filter: brightness(1.22);
+}
 
 .info__title__pfp {
   width: 85px;
   height: auto;
   border-radius: 25%;
   align-self: center;
-  transition: filter ease-out 0.2s;
-}
-.info__title__pfp:hover {
-  filter: brightness(1.22);
 }
 
 .anime {
