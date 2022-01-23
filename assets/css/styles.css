@@ -78,7 +78,6 @@ h3 {
 
 .info__title, .projects__title {
   text-align: left;
-  margin-right: 28px;
 }
 .info__title__description, .projects__title__description {
   color: #988BA2;
@@ -134,7 +133,7 @@ h3 {
 .project-entries {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 12px;
   margin: 12px 0;
 }
 .project-entries h1 {
@@ -149,6 +148,9 @@ h3 {
 .project-entries .project-entries__project {
   display: flex;
   flex-direction: column;
+  background-color: #1A1826;
+  padding: 15px;
+  border-radius: 10px;
 }
 
 a {
