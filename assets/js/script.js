@@ -37,7 +37,7 @@ function createProjectEntry(projectEntry) {
 const projects = [
                   new Project(
                     "Website - Axyl",
-                    "Designed and deployed the website of <a href='https://axylos.org'>Axyl</a>, \
+                    "⚡ Designed and deployed the website of <a href='https://axylos.org'>Axyl</a>, \
                     helping drive more than 3,000+ downloads.",
                     "HTML/CSS, Sass, JavaScript",
                     "axyl-os/axyl-os.github.io",
@@ -45,14 +45,14 @@ const projects = [
                   ),
                   new Project(
                     "treefetch",
-                    "A lightning-fast system fetch tool for Linux systems built with Rust, reaching over 600+ downloads.",
+                    "🌲 A lightning-fast system fetch tool for Linux systems built with Rust, reaching over 600+ downloads.",
                     "Rust",
                     "angelofallars/treefetch",
                     "https://github.com/angelofallars/treefetch"
                   ),
                   new Project(
                     "Axyl Stats Bot",
-                    "Developed and deployed a Discord bot allowing 240+ members in the \
+                    "📉 Developed and deployed a Discord bot allowing 240+ members in the \
                     Axyl server to access metrics about the Axyl project (downloads, stars, etc).",
                     "Python, PostgreSQL",
                     "angelofallars/axyl-stats",
