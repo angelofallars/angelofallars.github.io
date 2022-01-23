@@ -103,9 +103,10 @@ h2, h3 {
   height: auto;
   border-radius: 25%;
   align-self: center;
+  transition: filter ease-out 0.2s;
 }
 .info__title__pfp:hover {
-  filter: brightness(1.2);
+  filter: brightness(1.22);
 }
 
 .anime {
