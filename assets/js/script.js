@@ -45,7 +45,7 @@ const projects = [
                   ),
                   new Project(
                     "treefetch",
-                    "🌲 A lightning-fast system fetch tool for Linux systems built with Rust, reaching over 600+ downloads.",
+                    "🌲 A comfy system fetch tool for Linux systems built with Rust, getting over 600+ downloads.",
                     "Rust",
                     "angelofallars/treefetch",
                     "https://github.com/angelofallars/treefetch"
