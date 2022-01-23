@@ -270,9 +270,6 @@ a:hover {
     margin-left: auto;
     margin-right: 0;
     flex-shrink: 0;
-    position: absolute;
-    left: 70%;
-    z-index: -2;
   }
 
   footer {
@@ -282,6 +279,14 @@ a:hover {
 
   .footer-break {
     display: inline;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .info__cat {
+    position: absolute;
+    left: 67%;
+    bottom: -115px;
+    z-index: -2;
   }
 }
 
