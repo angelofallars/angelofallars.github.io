@@ -206,20 +206,35 @@ h2, h3 {
   }
 
   .project--blue {
+    $project-color: $blue;
+
+    h3 {
+      color: $project-color;
+    }
     .fab, .fas {
-      color: $blue;
+      color: $project-color;
     }
   }
 
   .project--green {
+    $project-color: $green;
+
+    h3 {
+      color: $project-color;
+    }
     .fab, .fas {
-      color: $green;
+      color: $project-color;
     }
   }
 
   .project--yellow {
+    $project-color: $yellow;
+
+    h3 {
+      color: $project-color;
+    }
     .fab, .fas {
-      color: $yellow;
+      color: $project-color;
     }
   }
 

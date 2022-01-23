@@ -160,11 +160,20 @@ h2, h3 {
   padding: 15px;
   border-radius: 10px;
 }
+.project-entries .project--blue h3 {
+  color: #96CDFB;
+}
 .project-entries .project--blue .fab, .project-entries .project--blue .fas {
   color: #96CDFB;
 }
+.project-entries .project--green h3 {
+  color: #ABE9B3;
+}
 .project-entries .project--green .fab, .project-entries .project--green .fas {
   color: #ABE9B3;
+}
+.project-entries .project--yellow h3 {
+  color: #FAE3B0;
 }
 .project-entries .project--yellow .fab, .project-entries .project--yellow .fas {
   color: #FAE3B0;
