@@ -9,14 +9,15 @@ $gray-2:   #C3BAC6;
 $black-3:  #302D41;
 $white:    #D9E0EE;
 
-$flamingo: #F2CDCD;
-$mauve:    #DDB6F2;
-$red:      #F28FAD;
-$peach:    #F8BD96;
-$green:    #ABE9B3;
-$yellow:   #FAE3B0;
-$blue:     #96CDFB;
-$pink:     #F5C2E7;
+$flamingo:  #F2CDCD;
+$mauve:     #DDB6F2;
+$maroon:    #E8A2AF;
+$red:       #F28FAD;
+$peach:     #F8BD96;
+$green:     #ABE9B3;
+$yellow:    #FAE3B0;
+$blue:      #96CDFB;
+$pink:      #F5C2E7;
 $rosewater: #F5E0DC;
 
 $teal:         #B5E8E0;
@@ -146,6 +147,20 @@ h2, h3 {
   height: auto;
   border-radius: 25%;
   align-self: center;
+}
+
+.info__cat {
+  margin-left: auto;
+  margin-right: 6px;
+  width: 100px;
+  color: $green;
+  user-select: none;
+}
+
+.info__cat-div {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
 }
 
 .anime {
@@ -298,6 +313,20 @@ a:hover {
       height: 100px;
       width: auto;
     }
+  }
+
+  .info__cat-div {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+  }
+
+  .info__cat {
+    margin-left: 0;
+  }
+
+  .anime {
+    margin: 15px 0;
   }
 
   footer {

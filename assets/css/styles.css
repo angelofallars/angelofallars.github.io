@@ -111,6 +111,20 @@ h2, h3 {
   align-self: center;
 }
 
+.info__cat {
+  margin-left: auto;
+  margin-right: 6px;
+  width: 100px;
+  color: #ABE9B3;
+  user-select: none;
+}
+
+.info__cat-div {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
 .anime {
   margin: 17px 0;
 }
@@ -251,6 +265,20 @@ a:hover {
   .info__title__pfp {
     height: 100px;
     width: auto;
+  }
+
+  .info__cat-div {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+  }
+
+  .info__cat {
+    margin-left: 0;
+  }
+
+  .anime {
+    margin: 15px 0;
   }
 
   footer {
