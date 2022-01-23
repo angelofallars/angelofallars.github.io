@@ -152,13 +152,17 @@ h2, h3 {
 .info__cat {
   margin-left: auto;
   margin-right: 6px;
+  margin-top: 15px;
   color: $green;
+  position: absolute;
+  right: 0;
 }
 
 .info__cat-div {
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
   justify-content: space-between;
+  position: relative;
 }
 
 .anime {
@@ -314,9 +318,7 @@ a:hover {
   }
 
   .info__cat {
-    margin-left: auto;
     margin-right: 0;
-    flex-shrink: 0;
   }
 
   footer {
@@ -329,12 +331,3 @@ a:hover {
   }
 }
 
-// Handle bizarre edge case of text wrap in iPhone 5/5s/SE (1st gen)
-@media only screen and (max-width: 320px) {
-  .info__cat {
-    position: absolute;
-    left: 67%;
-    bottom: -115px;
-    z-index: -2;
-  }
-}
