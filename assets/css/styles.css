@@ -109,7 +109,7 @@ h2, h3 {
 }
 
 .pacman {
-  margin: 20px 0;
+  margin: 12px 0;
   user-select: none;
   font-size: 20px;
   display: flex;
