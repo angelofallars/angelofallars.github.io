@@ -42,7 +42,7 @@ body {
 
 .container {
   max-width: $page-width;
-  margin: 15px auto 0 auto;
+  margin: 25px auto 0 auto;
   padding: 0 4%;
   display: flex;
   flex-direction: row;
@@ -60,10 +60,6 @@ body {
 
 .info__about__location {
   margin-top: 5px;
-}
-
-.container h1 {
-  margin-bottom: 3px;
 }
 
 footer {
@@ -84,6 +80,11 @@ footer {
   flex-direction: column;
 }
 
+h1 {
+  font-size: 28px;
+  margin: 0 0 3px;
+}
+
 h2 {
   margin-bottom: -3px;
   margin-top: 30px;
@@ -101,14 +102,39 @@ h3 {
 }
 
 .info__title, .projects__title {
-  text-align: center;
+  text-align: left;
   margin-right: 28px;
 
   &__description {
     color: $gray-1;
   }
+
+  a, a:hover {
+    border: none;
+    align-self: center;
+  }
 }
 
+.info__title {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.info__title__pfp {
+  width: 75px;
+  height: auto;
+  border-radius: 25%;
+  align-self: center;
+
+  &:hover {
+    filter: brightness(1.2);
+  }
+}
+
+.projects__title {
+  text-align: center;
+}
 
 .project-entries {
   display: flex;
@@ -165,6 +191,18 @@ a:hover {
 
   .info__title, .projects__title {
     margin-right: 0;
+    text-align: center;
+  }
+
+  .info__title {
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+
+    &__pfp {
+      height: 100px;
+      width: auto;
+    }
   }
 
   footer {
