@@ -39,7 +39,7 @@ const projects = [
                     "Website - Axyl",
                     "⚡ Designed and deployed the website of <a href='https://axylos.org'>Axyl</a>, \
                     helping drive more than 3,000+ downloads.",
-                    "HTML/CSS, Sass, JavaScript",
+                    "HTML/CSS, Sass, JavaScript, Caddy",
                     "axyl-os/axyl-os.github.io",
                     "https://github.com/axyl-os/axyl-os.github.io"
                   ),
