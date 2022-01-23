@@ -169,7 +169,7 @@ h2, h3 {
   flex-direction: column;
   background-color: #1A1826;
   padding: 15px;
-  border-radius: 10px;
+  border-radius: 12px;
 }
 .project-entries .project div, .project-entries .project div a {
   color: #988BA2;
