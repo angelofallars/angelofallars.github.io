@@ -11,6 +11,7 @@ $white:    #D9E0EE;
 $flamingo: #F2CDCD;
 $mauve:    #DDB6F2;
 $red:      #F28FAD;
+$peach:    #F8BD96;
 $green:    #ABE9B3;
 $yellow:   #FAE3B0;
 $blue:     #96CDFB;
@@ -156,6 +157,10 @@ h2, h3 {
     color: $green;
   }
 
+  &__ghost--orange {
+    color: $peach;
+  }
+
   &__ghost--blue {
     color: $blue;
   }
@@ -165,7 +170,7 @@ h2, h3 {
   }
 
   &__ghost--pink {
-    color: $pink;
+    color: $mauve;
   }
 }
 

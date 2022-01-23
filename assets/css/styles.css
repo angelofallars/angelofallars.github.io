@@ -121,6 +121,9 @@ h2, h3 {
 .pacman__ghost--green {
   color: #ABE9B3;
 }
+.pacman__ghost--orange {
+  color: #F8BD96;
+}
 .pacman__ghost--blue {
   color: #96CDFB;
 }
@@ -128,7 +131,7 @@ h2, h3 {
   color: #F28FAD;
 }
 .pacman__ghost--pink {
-  color: #F5C2E7;
+  color: #DDB6F2;
 }
 
 .projects__title {
