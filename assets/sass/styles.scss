@@ -152,6 +152,7 @@ h2, h3 {
 .info__cat {
   margin-left: auto;
   margin-right: 6px;
+  width: 100px;
   color: $green;
   user-select: none;
 }
@@ -160,17 +161,6 @@ h2, h3 {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-}
-
-.info__cat-div-mobile {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 10px;
-
-  .info__cat {
-    display: none;
-  }
 }
 
 .anime {
@@ -326,22 +316,13 @@ a:hover {
   }
 
   .info__cat-div {
-    .info__cat {
-      display: none
-    }
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
   }
 
-  .info__cat-div-mobile {
-    &__text br {
-      display: none;
-    }
-
-    .info__cat {
-      display: block;
-      margin-top: 15px;
-      margin-right: -3px;
-      flex: 1 0 auto;
-    }
+  .info__cat {
+    margin-left: 0;
   }
 
   footer {
