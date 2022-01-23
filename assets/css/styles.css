@@ -108,8 +108,16 @@ h2, h3 {
   filter: brightness(1.2);
 }
 
+.anime {
+  margin: 17px 0;
+}
+
+.anime__title {
+  color: #ABE9B3;
+}
+
 .pacman {
-  margin: 12px 0;
+  margin: 10px 0;
   user-select: none;
   font-size: 20px;
   display: flex;

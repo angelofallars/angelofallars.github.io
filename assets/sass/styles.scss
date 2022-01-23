@@ -143,8 +143,16 @@ h2, h3 {
   }
 }
 
+.anime {
+  margin: 17px 0;
+}
+
+.anime__title {
+  color: $green;
+}
+
 .pacman {
-  margin: 12px 0;
+  margin: 10px 0;
   user-select: none;
   font-size: 20px;
   display: flex;
