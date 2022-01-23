@@ -104,6 +104,29 @@ h3 {
   filter: brightness(1.2);
 }
 
+.pacman {
+  margin: 20px 0;
+  user-select: none;
+  font-size: 20px;
+  display: flex;
+  gap: 5px;
+}
+.pacman__pacman {
+  color: #FAE3B0;
+}
+.pacman__ghost--green {
+  color: #ABE9B3;
+}
+.pacman__ghost--blue {
+  color: #96CDFB;
+}
+.pacman__ghost--red {
+  color: #F28FAD;
+}
+.pacman__ghost--pink {
+  color: #F5C2E7;
+}
+
 .projects__title {
   text-align: center;
 }

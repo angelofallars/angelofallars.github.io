@@ -132,6 +132,34 @@ h3 {
   }
 }
 
+.pacman {
+  margin: 20px 0;
+  user-select: none;
+  font-size: 20px;
+  display: flex;
+  gap: 5px;
+
+  &__pacman {
+    color: $yellow;
+  }
+
+  &__ghost--green {
+    color: $green;
+  }
+
+  &__ghost--blue {
+    color: $blue;
+  }
+
+  &__ghost--red {
+    color: $red;
+  }
+
+  &__ghost--pink {
+    color: $pink;
+  }
+}
+
 .projects__title {
   text-align: center;
 }
