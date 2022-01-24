@@ -123,10 +123,9 @@ h2, h3 {
 .info__cat {
   margin-left: auto;
   margin-right: 6px;
-  margin-top: 15px;
   color: #ABE9B3;
-  position: absolute;
-  right: 0;
+  flex-shrink: 0;
+  position: relative;
 }
 .info__cat:hover .info__cat__hover-text {
   opacity: 1;
@@ -163,7 +162,7 @@ h2, h3 {
 
 .info__cat-div {
   display: flex;
-  align-items: flex-start;
+  align-items: flex-end;
   justify-content: space-between;
   position: relative;
 }
