@@ -114,6 +114,10 @@ h2, h3 {
 .fa-field {
   display: flex;
   gap: 10px;
+  align-items: flex-start;
+}
+.fa-field i {
+  margin-top: 2px;
 }
 
 .info__cat {
