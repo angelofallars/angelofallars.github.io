@@ -239,6 +239,7 @@ h2, h3 {
 }
 .project-entries .project div, .project-entries .project div a {
   color: #988BA2;
+  border-color: #6E6C7E;
 }
 .project-entries .project--yellow h3 {
   color: #FAE3B0;
