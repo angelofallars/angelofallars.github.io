@@ -44,7 +44,16 @@ footer {
   width: 95%;
   margin: 0 auto;
   display: flex;
-  flex-direction: column;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.footer-container .footer__right a {
+  color: #6E6C7E;
+  border-bottom-color: #6E6C7E;
+}
+.footer-container .footer__right a:hover {
+  color: inherit;
+  border-bottom-color: inherit;
 }
 
 h1 {
@@ -331,8 +340,13 @@ a:hover {
   }
 
   footer {
-    text-align: center;
-    margin-top: 2px;
+    text-align: left;
+    margin-top: 10px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    max-width: 400px;
   }
 
   .footer-break {
