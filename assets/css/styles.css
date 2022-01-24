@@ -272,6 +272,21 @@ a {
   border-bottom: 1px dashed #988BA2;
 }
 
+.link-split {
+  border-bottom: none;
+}
+.link-split span {
+  display: inline-block;
+  border-bottom: 1px dashed #988BA2;
+}
+
+.link-split:hover {
+  border-bottom: none;
+}
+.link-split:hover span {
+  border-bottom: 1px dashed #B5E8E0;
+}
+
 a:link, a:visited {
   color: #D3C9D6;
 }

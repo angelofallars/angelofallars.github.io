@@ -324,6 +324,22 @@ a {
   border-bottom: 1px dashed $fg-primary-soft;
 }
 
+.link-split {
+  border-bottom: none;
+  span {
+    display: inline-block;
+    border-bottom: 1px dashed $fg-primary-soft;
+  }
+}
+
+.link-split:hover {
+  border-bottom: none;
+  span {
+    border-bottom: 1px dashed $teal;
+  }
+}
+
+
 a:link, a:visited {
   color: $fg-primary;
 }
