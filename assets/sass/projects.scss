@@ -1,0 +1,34 @@
+@use "styles" as *;
+
+.project-page {
+  max-width: $page-width;
+}
+
+.back-link {
+  text-align: left;
+  margin-left: 3vw;
+}
+
+.project-entries {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: auto;
+  gap: 10px;
+}
+
+.project {
+  width: 88vw;
+  max-width: 360px;
+  height: 365px;
+  padding: 15px 10px;
+
+  img {
+    border-radius: 10px;
+    width: 87vw;
+    max-width: 350px;
+    height: 180px;
+    margin: 0 auto 10px;
+    object-fit: cover;
+  }
+}

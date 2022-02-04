@@ -101,6 +101,10 @@ h2, h3 {
   margin-bottom: 6px;
 }
 
+.header-title {
+  text-align: center;
+}
+
 /* Font Awesome icons */
 .container {
   .fab, .fas {
@@ -135,7 +139,7 @@ h2, h3 {
     color: $gray-1;
   }
 
-  a, a:hover {
+  .info__title__img-link {
     border: none;
     align-self: center;
   }
@@ -285,44 +289,60 @@ h2, h3 {
     margin: 5px 0;
   }
 
-  .project {
-    display: flex;
-    flex-direction: column;
-    background-color: $bg-secondary;
-    padding: 15px;
-    border-radius: 12px;
+}
 
-    div, div a {
-      color: $gray-1;
-      border-color: $gray-0;
-    }
+.project {
+  display: flex;
+  flex-direction: column;
+  background-color: $bg-secondary;
+  padding: 15px;
+  border-radius: 12px;
+
+  div, div a {
+    color: $gray-1;
+    border-color: $gray-0;
   }
 
-  @mixin project-theme($color: $blue) {
-    h3 {
-      color: $color;
-    }
-    .fab, .fas {
-      color: $color;
-    }
-    a:hover {
-      color: $color;
-      border-color: $color;
-    }
+  .fa-field:nth-of-type(1) {
+    margin-top: auto;
   }
+}
 
-  .project--yellow {
-    @include project-theme($yellow);
+@mixin project-theme($color: $blue) {
+  h3 {
+    color: $color;
   }
-
-  .project--green {
-    @include project-theme($green);
+  .fab, .fas {
+    color: $color;
   }
-
-  .project--blue {
-    @include project-theme($blue);
+  a:hover {
+    color: $color;
+    border-color: $color;
   }
+}
 
+.project--yellow {
+  @include project-theme($yellow);
+}
+
+.project--green {
+  @include project-theme($green);
+}
+
+.project--blue {
+  @include project-theme($blue);
+}
+
+.project--teal {
+  @include project-theme($teal);
+}
+
+.project--red {
+  @include project-theme($red);
+}
+
+.project--pink {
+  @include project-theme($pink);
 }
 
 // Workaround because the lightning emoji (⚡) is just a font letter
