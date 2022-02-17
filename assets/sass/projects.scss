@@ -1,5 +1,10 @@
 @use "styles" as *;
 
+.container {
+  flex-direction: column;
+  gap: 5px;
+}
+
 .project-page {
   max-width: $page-width;
 }
@@ -30,5 +35,41 @@
     height: 180px;
     margin: 0 auto 10px;
     object-fit: cover;
+  }
+}
+
+.color-script {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 20px;
+  user-select: none;
+  font-family: monospace;
+  letter-spacing: -1.4px;
+  line-height: 0.92;
+  font-size: 13px;
+
+  &--red {
+    color: $red;
+  }
+
+  &--green {
+    color: $green;
+  }
+
+  &--orange {
+    color: $peach;
+  }
+
+  &--blue {
+    color: $blue;
+  }
+
+  &--magenta {
+    color: $pink;
+  }
+
+  &--cyan {
+    color: $teal;
   }
 }

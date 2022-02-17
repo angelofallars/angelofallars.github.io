@@ -401,6 +401,11 @@ a:hover {
     display: inline;
   }
 }
+.container {
+  flex-direction: column;
+  gap: 5px;
+}
+
 .project-page {
   max-width: 840px;
 }
@@ -431,6 +436,36 @@ a:hover {
   height: 180px;
   margin: 0 auto 10px;
   object-fit: cover;
+}
+
+.color-script {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 20px;
+  user-select: none;
+  font-family: monospace;
+  letter-spacing: -1.4px;
+  line-height: 0.92;
+  font-size: 13px;
+}
+.color-script--red {
+  color: #F28FAD;
+}
+.color-script--green {
+  color: #ABE9B3;
+}
+.color-script--orange {
+  color: #F8BD96;
+}
+.color-script--blue {
+  color: #96CDFB;
+}
+.color-script--magenta {
+  color: #F5C2E7;
+}
+.color-script--cyan {
+  color: #B5E8E0;
 }
 
 /*# sourceMappingURL=projects.css.map */
