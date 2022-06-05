@@ -402,4 +402,21 @@ a:hover {
   }
 }
 
+::-webkit-scrollbar {
+	width: 12px;
+	border: none;
+}
+
+::-webkit-scrollbar-track {
+	background: 	#303446
+}
+
+::-webkit-scrollbar-thumb {
+	background: #51576d;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #414559;
+}
+
 /*# sourceMappingURL=styles.css.map */
