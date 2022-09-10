@@ -1,0 +1,26 @@
+{
+  "name": "angelofallars.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angelofallars/angelofallars.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/angelofallars/angelofallars.github.io/issues"
+  },
+  "homepage": "https://github.com/angelofallars/angelofallars.github.io#readme",
+  "dependencies": {
+    "astro": "^1.2.1"
+  }
+}
