@@ -1,0 +1,96 @@
+:root {
+  --fg: #4D4D4D;
+  --light: #aaaaaa;
+  --green: #8aa44a;
+}
+
+html, body {
+  font-family: source-sans-pro, sans-serif;
+  font-size: 18px;
+  margin: 0;
+  color: var(--fg);
+}
+
+h1, h2, h3 {
+  font-weight: inherit;
+  color: var(--green);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: solid 2px var(--green);
+}
+
+a:hover {
+  color: var(--green);
+}
+
+.container {
+  margin: 80px auto 0;
+  padding: 0 4%;
+  max-width: 520px;
+}
+
+.link-icons {
+  margin-top: 1.2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 0.6em;
+}
+
+.link-icon {
+  text-decoration: none;
+  border: none;
+  margin-right: 0.8em;
+  padding: 0.2em;
+  user-select: none;
+}
+
+.link-icon img {
+  transition: all 0.15s linear;
+}
+
+.link-icon:hover img {
+  filter: invert(2);
+  transform: scale(1.2);
+}
+
+.cat-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cat {
+  font-family: source-sans-mono, monospace;
+  position: relative;
+  user-select: none;
+  color: var(--green);
+}
+
+.cat__hover-text {
+  position: absolute;
+  top: 0;
+  left: -3.5em;
+  pointer-events: none;
+  transition: all 0.25s ease;
+  opacity: 0;
+  transform: translateY(0.4em);
+}
+
+.cat:hover .cat__hover-text {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media only screen and (max-width: 700px) {
+  .container {
+    margin-top: 30px;
+    font-size: 88%;
+  }
+
+  .link-icons {
+    justify-content: center;
+  }
+}
