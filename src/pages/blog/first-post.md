@@ -1,10 +1,10 @@
 ---
 layout: "../../layouts/BlogPost.astro"
 title: "fmt.Println('Hello world!')"
-pubDate: "Sep 12 2022"
+pubDate: "Sep 10 2022"
 ---
 
-Greetings! First things first, I'm going to introduce myself.
+Hi there! First things first, I'm going to introduce myself.
 
 I am Angelo Fallaria, and I work as a software engineer. As of writing, I am 19 years old. I swear by Neovim to edit my code. Linux is my full-time operating system. ~~I use Artix btw~~
 
