@@ -1,0 +1,15 @@
+---
+import '../styles/base.css';
+import favicon from '../../public/cat-face.png';
+
+export interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<meta charset="UTF-8">
+<title>Angelo Fallaria - {title}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href={favicon}>

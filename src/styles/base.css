@@ -1,6 +1,7 @@
 :root {
-  --fg: #4D4D4D;
+  --fg: #383838;
   --light: #818181;
+  --lighter: #BFBFBF;
   --green: #8aa44a;
 }
 
@@ -11,14 +12,17 @@ html, body {
   color: var(--fg);
 }
 
-h1, h2, h3, .sidebar-header {
-  font-weight: inherit;
-  color: var(--green);
+h1, h2, h3 {
+  font-weight: 700;
 }
 
-.sidebar-header {
-  font-size: 28px;
-  font-weight: 500;
+h1 {
+  font-size: 30px;
+  margin-bottom: 0.2em;
+}
+
+h3 {
+  margin-bottom: 0.5em;
 }
 
 a {
@@ -29,12 +33,24 @@ a {
 
 a:hover {
   color: var(--green);
+  border-bottom-color: var(--green);
+}
+
+hr {
+  margin: 0.1em 0;
+  height: 2px;
+  background: var(--lighter);
+  border: 0;
+}
+
+.blog-hr {
+  margin-top: 0.5em;
 }
 
 .container {
   margin: 80px auto 0;
   padding: 0 4%;
-  max-width: 700px;
+  max-width: 780px;
 }
 
 .columns {
@@ -42,12 +58,22 @@ a:hover {
   gap: 20px;
 }
 
+.sidebar-header {
+  background-color: var(--green);
+  color: white;
+  padding: 2px 5px;
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 0.4em;
+}
+
 .sidebar {
   width: 30%;
 }
 
 .sidebar-link {
-  margin: 0.4em 0;
+  margin: 0.3em 0;
 }
 
 .sidebar-link.active {
@@ -63,10 +89,38 @@ a:hover {
   width: 70%;
 }
 
-footer {
+.posts {
+  margin-left: 20px;
+}
+
+.post {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.post-date {
+  font-weight: 300;
+}
+
+.post-title {
+  font-weight: 500;
+}
+
+.post-description {
+  margin-top: 0.3em;
+}
+
+.blog-date {
+  margin: 0.2em 0;
+  font-weight: 300;
+}
+
+footer, footer a {
   color: var(--light);
   text-align: center;
-  margin: 1.5em 0;
+  margin: 2em 0;
+  border-bottom-color: var(--light);
 }
 
 
@@ -80,6 +134,10 @@ footer {
   }
   
   .sidebar {
+    width: 100%;
+  }
+
+  .columns main {
     width: 100%;
   }
 

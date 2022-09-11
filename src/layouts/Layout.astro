@@ -1,5 +1,5 @@
 ---
-import '../styles/base.css';
+import BaseHead from "../components/BaseHead.astro";
 import Sidebar from '../components/Sidebar.astro';
 import Footer from '../components/Footer.astro';
 
@@ -12,19 +12,17 @@ const { title } = Astro.props;
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Angelo Fallaria</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-      <div class="container">
-          <div class="columns">
-              <Sidebar />
-              <slot />
-          </div>
-          <Footer />
-      </div>
-  </body>
+    <head>
+    <BaseHead title={title}>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="columns">
+                <Sidebar />
+                <slot />
+            </div>
+            <Footer />
+        </div>
+    </body>
 </html>
