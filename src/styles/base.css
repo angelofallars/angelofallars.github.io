@@ -103,6 +103,10 @@ hr {
   font-weight: 300;
 }
 
+.post-text {
+  flex: 1;
+}
+
 .post-title {
   font-weight: 500;
 }

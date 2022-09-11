@@ -4,12 +4,30 @@ import favicon from '../../public/cat-face.png';
 
 export interface Props {
 	title: string;
+    description?: string;
 }
 
-const { title } = Astro.props;
+const { title } = Astro.props.frontmatter || Astro.props;
+let { description } = Astro.props.frontmatter || Astro.props;
+
+if (description === undefined) {
+    description = "Angelo Fallaria's personal website, focused on programming and Linux.";
+}
 ---
 
 <meta charset="UTF-8">
 <title>Angelo Fallaria - {title}</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" type="image/png" href={favicon}>
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content={Astro.url} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content={Astro.url} />
+<meta property="twitter:title" content={title} />
+<meta property="twitter:description" content={description} />

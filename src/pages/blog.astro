@@ -1,9 +1,20 @@
 ---
 import Layout from '../layouts/Layout.astro';
 
+import removeMd from 'remove-markdown';
+
 const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
 	(a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf()
 );
+
+function getFirstParagraph(compiledContent) {
+    console.log(compiledContent);
+    const re = new RegExp("(.|\n)*?\n\n", "gm");
+    const found = [...compiledContent.matchAll(re)];
+    console.log(found);
+    const firstParagraph = found[0][0];
+    return removeMd(firstParagraph);
+}
 ---
 
 <Layout title="Blog">
@@ -23,10 +34,11 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
 
                 <div class="post-text">
                     <a href={post.url} class="post-title">{post.frontmatter.title}</a>
-                    {post.frontmatter.description && <div class="post-description">
-                    {post.frontmatter.description}
-                    </div>}
+                    <div class="post-description">
+                    {getFirstParagraph(post.rawContent())}
+                    </div>
                 </div>
+
             </div>
             ))}
         </div>

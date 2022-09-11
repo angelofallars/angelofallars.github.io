@@ -1,7 +1,6 @@
 ---
 layout: "../../layouts/BlogPost.astro"
 title: "fmt.Println('Hello world!')"
-description: "My first ever blog post"
 pubDate: "Sep 11 2022"
 ---
 

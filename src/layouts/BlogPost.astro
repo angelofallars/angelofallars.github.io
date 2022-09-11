@@ -3,6 +3,8 @@ import BaseHead from "../components/BaseHead.astro";
 import Sidebar from '../components/Sidebar.astro';
 import Footer from '../components/Footer.astro';
 
+import removeMd from 'remove-markdown';
+
 export interface Props {
 	title: string;
     pubDate?: string
@@ -10,12 +12,24 @@ export interface Props {
 }
 
 const { title, pubDate, description } = Astro.props.frontmatter || Astro.props;
+
+function getFirstTwoParagraphs(content) {
+    console.log(content);
+    const re = new RegExp("(.|\n)*?\n\n", "gm");
+    const found = [...content.matchAll(re)];
+    console.log(found);
+    const firstTwoParagraphs = found[0][0] + found[1][0];
+    return removeMd(firstTwoParagraphs); 
+}
+
+const previewDescription = getFirstTwoParagraphs(Astro.props.rawContent());
+
 ---
 
 <!DOCTYPE html>
 <html lang="en">
     <head>
-    <BaseHead title={title}>
+        <BaseHead title={title} description={previewDescription}>
     </head>
 
     <body>
@@ -27,9 +41,11 @@ const { title, pubDate, description } = Astro.props.frontmatter || Astro.props;
                     <p class="blog-date">
                         {pubDate && <time>{pubDate}</time>}
                     </p>
+                    <!---
                     <div class="blog-description">
                         {description && <span>{description}</span>}
                     </div>
+                    --->
                     <hr class="blog-hr">
                     <slot />
                 </main>
