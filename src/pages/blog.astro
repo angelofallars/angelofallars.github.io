@@ -34,6 +34,12 @@ function getFirstParagraph(compiledContent) {
 
                 <div class="post-text">
                     <a href={post.url} class="post-title">{post.frontmatter.title}</a>
+                    {post.frontmatter.heroImage &&
+                    <div class="post-image">
+                        <a href={post.url} class="url-no-highlight">
+                            <img src={post.frontmatter.heroImage} />
+                        </a>
+                    </div>}
                     <div class="post-description">
                     {getFirstParagraph(post.rawContent())}
                     </div>

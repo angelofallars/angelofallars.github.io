@@ -6,6 +6,7 @@ export interface Props {
 	title: string;
     description?: string;
 	previewTitle?: string;
+    previewImage?: string;
 }
 
 const { title } = Astro.props.frontmatter || Astro.props;
@@ -16,7 +17,9 @@ if (description === undefined) {
     description = "Angelo Fallaria's personal website, focused on programming and Linux.";
 }
 
-let image = "https://raw.githubusercontent.com/angelofallars/angelofallars.github.io/main/public/og-preview.png";
+let { heroImage } = Astro.props.frontmatter || "";
+
+let image = Astro.props.previewImage || "https://raw.githubusercontent.com/angelofallars/angelofallars.github.io/main/public/og-preview.png";
 
 ---
 

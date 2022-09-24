@@ -9,9 +9,12 @@ export interface Props {
 	title: string;
     pubDate?: string
     description?: string
+    heroImage?: string;
 }
 
 const { title, pubDate, description } = Astro.props.frontmatter || Astro.props;
+
+const { heroImage } = Astro.props.frontmatter;
 
 function getFirstTwoParagraphs(content) {
     console.log(content);
@@ -29,7 +32,7 @@ const previewDescription = getFirstTwoParagraphs(Astro.props.rawContent());
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <BaseHead title={title} description={previewDescription}>
+        <BaseHead title={title} description={previewDescription} previewImage={heroImage}>
     </head>
 
     <body>
@@ -46,6 +49,10 @@ const previewDescription = getFirstTwoParagraphs(Astro.props.rawContent());
                         {description && <span>{description}</span>}
                     </div>
                     --->
+                    {heroImage &&
+                    <div class="blog-hero-image">
+                        <img src={heroImage} />
+                    </div>}
                     <hr class="blog-hr">
                     <slot />
                 </main>

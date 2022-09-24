@@ -91,6 +91,9 @@ hr {
 
 .posts {
   margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .post {
@@ -115,9 +118,30 @@ hr {
   margin-top: 0.3em;
 }
 
+.post-image {
+  margin: 0.5em 0;
+}
+
 .blog-date {
   margin: 0.2em 0;
   font-weight: 300;
+}
+
+.blog-image-link, .url-no-highlight {
+  text-decoration: none;
+  border: none;
+}
+
+.blog-hero-image {
+  margin: 1em 0;
+}
+
+main img {
+  max-width: 100%;
+}
+
+th {
+  text-align: left;
 }
 
 footer, footer a {
