@@ -11,7 +11,7 @@ a software engineer and streamer who uses a split keyboard with Neovim.
 
 As a software engineer, I'm on the computer coding all day in Vim. Sometimes after a coding session, my wrists and hands start to hurt.
 
-I'm concerned about getting an RSI (repetitive strain injury). As it is, I've already gotten a wrist injury from exercise two months ago. I think that a split keyboard can potentially improve my computer ergonomics, because you can align your wrists and shoulders to a much more natural position while typing.
+I'm concerned about getting an RSI (repetitive strain injury). As it is, I've already gotten a wrist injury from exercise two months ago. I think that a split keyboard can potentially improve my computer ergonomics, because I can align my wrists and shoulders to more natural position while typing.
 
 And so I started searching for a keyboard that would not only reduce my wrist pain and risk of getting an RSI, but also make me
 🔥 BLAZINGLY FAST 🔥 in Vim.
@@ -28,25 +28,23 @@ goodness for [Next Keyboard Club](https://nextkeyboard.club/)!
 I looked at his shop's catalog, and decided to buy the [Lily58 Pro](https://nextkeyboard.club/product/lily58-pro-mx-hotswap-keyboard/). It's a 60%-ish split keyboard with
 a small OLED display on each half.
 
-The Lily58 has an ortholinear layout, which means that the keys are
-aligned, instead of being *staggered* like in regular keyboards. For example, that means the W, S,
-  and X keys are stacked exactly on top of each other, instead of being diagonally aligned.
+The Lily58 has a columnar stagger, which means that the keys are
+staggered by column, instead of being *row staggered* like in regular keyboards. I'll explain in an
+image below.
 
-He also had other keyboards (Corne/Reviung41/Fifi) in stock, but they were 40% keyboards without the number row. I
-need the number rows for games and switching workspaces in a tiling window manager.
+Next Keyboard Club also had other keyboards (Corne/Reviung41/Fifi) in stock, but they were 40% keyboards without the number row. I
+need the number rows for games and switching workspaces in a [tiling window manager](https://hyprland.org/).
 
 I'm not
 nerd enough yet to give up the number row, so I'm good for now. ~~buys a [Corne keyboard](https://nextkeyboard.club/product-tag/corne-v3-0-1-mx/) 6 months later anyways~~
 
-### Staggered and ortholinear? I still don't get what they mean
+### Row and column stagger? I still don't get what they mean
 
-Fine. I'm bored and I have nothing else to do, so I made this illustration to show the difference between
-staggered and ortholinear keyboards.
+I'm bored, and I have nothing else to do, so I made this illustration to show the difference between
+keyboard layouts.
 
-<a href="https://i.imgur.com/SDw9o3c.png" class="blog-image-link">
-  <img src="https://i.imgur.com/SDw9o3c.png" alt="illustration showing the difference between
-  staggered and ortholinear keyboards">
-</a>
+<img src="https://i.imgur.com/GRUTC9H.png" alt="illustration showing the difference between
+row stagger, column stagger and ortholinear keyboards">
 
 
 ## The Parts
@@ -95,53 +93,54 @@ end. I think. 😅
 
 Here are the pictures of my finished keyboard build. It's not the most beautiful or striking, but I'm pretty proud of it.
 
-<a href="https://i.imgur.com/yNV94Ry.jpg" class="blog-image-link">
-  <img src="https://i.imgur.com/yNV94Ry.jpg" alt="Lily58 split keyboard with a black case, and black, gray and
-  orange keycaps connected with a gray coiled cable">
-</a>
+<img src="https://i.imgur.com/yNV94Ry.jpg" alt="Lily58 split keyboard with a black case, and black, gray and
+orange keycaps connected with a gray coiled cable">
 
+<img src="https://i.imgur.com/u0uHiC4.jpg" alt="Lily58 split keyboard right half on a black
+deskmat">
 
-<a href="https://i.imgur.com/u0uHiC4.jpg" class="blog-image-link">
-  <img src="https://i.imgur.com/u0uHiC4.jpg" alt="Lily58 split keyboard right half on a black
-  deskmat">
-</a>
-
-<a href="https://i.imgur.com/lC4Dt0w.jpg" class="blog-image-link">
-  <img src="https://i.imgur.com/lC4Dt0w.jpg" alt="Lily58 split keyboard with a black case, and black, gray and
-  orange keycaps connected with a gray coiled cable">
-</a>
+<img src="https://i.imgur.com/lC4Dt0w.jpg" alt="Lily58 split keyboard with a black case, and black, gray and
+orange keycaps connected with a gray coiled cable">
 
 
 ## My Initial Thoughts
 
-On a normal keyboard, I consistently hit 120+ WPM on Monkeytype. I was worried that a split keyboard
+On a normal keyboard, I was consistently typing 120+ WPM (words per minute) on [Monkeytype](https://monkeytype.com/). I was worried that a split keyboard
 could slow down my typing speed to 10-30 WPM for a few weeks. Many people I know found that they were
 drastically slowed down from adjusting to a split keyboard and that it took a few weeks or months for
 them to adjust.
 
-It turns out my worries were unfounded. I practiced typing on my Lily58 with Monkeytype, and I was quickly able to reach 110+ WPM in a few hours. I was able to get that high so fast because I've been practicing touch typing for more than half a year now.
+It turns out my worries were unfounded. I practiced typing on my Lily58 with Monkeytype, and I was quickly able to reach 110+ WPM in a few hours. I was able to get that high so fast because I've been practicing touch typing for more than half a year now. After a day of using my Lily58, I was able to achieve 121 WPM.
 
-After I was accustomed to the ortholinear layout, it does feel more comfortable to me than a
-regular staggered layout.
+<img src="https://i.imgur.com/cr7tqeI.png" alt="Angelo's score on Monkeytype with his split
+keyboard, 121 words per minute">
+
+<img src="https://i.imgur.com/PSDWriz.png" alt="My score graph">
+
+
+I looked at the graph of my typing speed over time in Monkeytype. In the graph above, you can see a dip in typing speed
+on the right. That's when I switched to my new split keyboard. My typing speed dipped, but I'm
+recovering quite fast. I predict that in a week, I'll be back to my normal typing speed.
+
+After I was accustomed to the columnar stagger layout, it does feel more comfortable to me than a
+row stagger layout. I really, really like the keyboard being split into two.
 
 Lily58 has 58 keys, which is 13 keys less than my previous keyboard (71 keys). I was able to manage the reduced key count because I can do layering and other shenanigans with this keyboard.
-
-I really, really like the split feature. It was starting to feel awkward trying to type on a regular
-keyboard with your hands close to each other.
+I use [Vial](https://get.vial.today/) to modify my keyboard layout and layers.
 
 ## Vimming Time
 
-To try out Vim on my Lily58, I'm currently writing this blog article in Vim. Already, I can write in English well. I still have to see how I fare doing work projects with this keyboard.
+To try out Vim on my Lily58, I'm currently writing this blog article in Vim. Already, I can write in Markdown super well. I still have to see how I fare doing work projects with this keyboard.
 
-I've set up my Super key (switched with the Alt key) so that when I tap it twice, it becomes Escape instead. It has become an intuitive way for me to exit out of insert mode.
+I've set up my Super key (switched with the Alt key) so that when I tap it twice, it becomes Escape instead. It has become an intuitive way for me to exit out of insert mode. Here's my normal layer layout below.
+
+<img src="https://i.imgur.com/oxKVf6F.png" alt="My layer 0 key set">
 
 ## Conclusion
 
-I'm still not as fast yet in my Lily58 as I was in my old regular keyboard, but I really feel like
+I'm still not as fast yet in my Lily58 as I was in my old regular keyboard, but I feel like
 this keyboard will make me the fastest I've ever been in Vim.
 
 Already, I can notice the benefits of having more freedom to place your hands around. I can
-position my arms with a more comfortable and natural position.
-
-I'm looking forward to seeing how I'll perform while doing actual programming at work with my new split
-keyboard.
+position my arms in a more comfortable and natural position. I'm probably never going back to
+a regular keyboard anymore, because I've fallen in love with splits.
