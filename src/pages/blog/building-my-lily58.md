@@ -2,7 +2,7 @@
 layout: "../../layouts/BlogPost.astro"
 title: "Building my first split keyboard (Lily58) ⌨️"
 pubDate: "Sep 25, 2022"
-heroImage: "https://i.imgur.com/z9M6221.jpg"
+heroImage: "https://i.imgur.com/EfTedzQ.jpg"
 ---
 
 I've wanted to use a split keyboard ever since I started watching
