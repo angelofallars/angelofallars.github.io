@@ -3,12 +3,32 @@ import SidebarLink from './SidebarLink.astro';
 ---
 
 <div class="sidebar">
-    <header class="sidebar-header">Angelo Fallaria</header>
+    <div class="sidebar-top">
+      <header class="sidebar-header">Angelo Fallaria</header>
+      <div class="cat cat-mobile">
+        &nbsp;/| ､<br>
+             (°､ ｡ 7<br>
+        &nbsp;|､  ~ヽ<br>
+        &nbsp;じしf_,)〳 <br>
+      </div>
+    </div>
     <nav class="sidebar-nav">
         <SidebarLink href="/">About</SidebarLink>
         <SidebarLink href="/blog/">Blog</SidebarLink>
-        <SidebarLink href="https://github.com/angelofallars" target="_blank">GitHub</SidebarLink>
-        <SidebarLink href="https://www.linkedin.com/in/angelofallaria/" target="_blank">LinkedIn</SidebarLink>
-        <SidebarLink href="/resume.pdf" target="_blank">Resume</SidebarLink>
+        <SidebarLink href="https://github.com/angelofallars" class="external" target="_blank">
+          GitHub
+        </SidebarLink>
+        <SidebarLink href="https://www.linkedin.com/in/angelofallaria/" class="external" target="_blank">
+          LinkedIn
+        </SidebarLink>
+        <SidebarLink href="/resume.pdf" class="external" target="_blank">
+          Resume
+        </SidebarLink>
     </nav>
+    <div class="cat cat-desktop">
+      &nbsp;/| ､<br>
+           (°､ ｡ 7<br>
+      &nbsp;|､  ~ヽ<br>
+      &nbsp;じしf_,)〳 <br>
+    </div>
 </div>

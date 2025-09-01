@@ -46,7 +46,14 @@ const previewDescription = getFirstTwoParagraphs(Astro.props.rawContent());
                 <main>
                     <h1 style="margin-top: 0;">{title}</h1>
                     <p class="blog-date">
-                        {pubDate && <time>{pubDate}</time>}
+                      {pubDate &&
+                      <time datetime={pubDate}>
+                        {new Date(pubDate).toLocaleDateString('en-us', {
+                        year: 'numeric',
+                        month: 'short',
+                        day: 'numeric',
+                        })}
+                      </time>}
                     </p>
                     <!---
                     <div class="blog-description">
