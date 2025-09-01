@@ -213,7 +213,8 @@ th {
 footer, footer a {
   color: var(--fg-subtle);
   text-align: center;
-  margin-top: 2.5em;
+  margin-top: 2.7em;
+  margin-bottom: 1.8em;
   border-bottom-color: var(--fg-subtle);
 }
 
@@ -279,6 +280,8 @@ ul, ol {
   .sidebar-nav {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1px;
     align-content: flex-start;
     margin: 0.5em 0;
   }
