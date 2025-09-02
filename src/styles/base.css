@@ -53,7 +53,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 28px;
+  font-size: 30px;
   margin-bottom: 0.2em;
 }
 
@@ -110,7 +110,7 @@ hr {
   border-bottom: solid 3px var(--accent-name);
   font-weight: 480;
 
-  font-size: 28px;
+  font-size: 30px;
   margin-bottom: 0.5em;
 }
 
@@ -159,7 +159,9 @@ hr {
 }
 
 .post-date {
-  font-weight: 450;
+  font-weight: 400;
+  text-align: right;
+  min-width: 110px;
 }
 
 .post-text {
@@ -180,7 +182,7 @@ hr {
 
 .blog-date {
   margin: 0.2em 0;
-  font-weight: 450;
+  font-weight: 400;
 }
 
 .blog-image-link, .url-no-highlight {
