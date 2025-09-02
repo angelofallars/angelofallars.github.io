@@ -250,7 +250,7 @@ ul, ol {
   display: inline-block;
   height: 1em;
   margin-left: -.09em;
-  margin-top: .23em;
+  margin-top: .2em;
   -webkit-mask-image: url(/assets/external-link.svg);
   mask-image: url(/assets/external-link.svg);
   -webkit-mask-size: cover;
