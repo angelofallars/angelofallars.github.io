@@ -1,39 +1,40 @@
 :root {
-  /* Catppuccin Macchiato */
-  --ctp-rosewater: #f4dbd6;
-  --ctp-flamingo: #f0c6c6;
-  --ctp-pink: #f5bde6;
-  --ctp-mauve: #c6a0f6;
-  --ctp-red: #ed8796;
-  --ctp-maroon: #ee99a0;
-  --ctp-peach: #f5a97f;
-  --ctp-yellow: #eed49f;
-  --ctp-green: #a6da95;
-  --ctp-teal: #8bd5ca;
-  --ctp-sky: #91d7e3;
-  --ctp-sapphire: #7dc4e4;
-  --ctp-blue: #8aadf4;
-  --ctp-lavender: #b7bdf8;
+  /* Catppuccin Latte */
+  --ctp-rosewater: #dc8a78;
+  --ctp-flamingo: #dd7878;
+  --ctp-pink: #ea76cb;
+  --ctp-mauve: #8839ef;
+  --ctp-red: #d20f39;
+  --ctp-maroon: #e64553;
+  --ctp-peach: #fe640b;
+  --ctp-yellow: #df8e1d;
+  --ctp-green: #40a02b;
+  --ctp-teal: #179299;
+  --ctp-sky: #04a5e5;
+  --ctp-sapphire: #209fb5;
+  --ctp-blue: #1e66f5;
+  --ctp-lavender: #7287fd;
 
-  --ctp-text: #cad3f5;
-  --ctp-subtext1: #b8c0e0;
-  --ctp-subtext0: #a5adcb;
-  --ctp-overlay2: #939ab7;
-  --ctp-overlay1: #8087a2;
-  --ctp-overlay0: #6e738d;
-  --ctp-surface2: #5b6078;
-  --ctp-surface1: #494d64;
-  --ctp-surface0: #363a4f;
+  --ctp-text: #4c4f69;
+  --ctp-subtext1: #5c5f77;
+  --ctp-subtext0: #6c6f85;
+  --ctp-overlay2: #7c7f93;
+  --ctp-overlay1: #8c8fa1;
+  --ctp-overlay0: #9ca0b0;
+  --ctp-surface2: #acb0be;
+  --ctp-surface1: #bcc0cc;
+  --ctp-surface0: #ccd0da;
 
-  --ctp-base: #24273a;
-  --ctp-mantle: #1e2030;
-  --ctp-crust: #181926;
+  --ctp-base: #eff1f5;
+  --ctp-mantle: #e6e9ef;
+  --ctp-crust: #dce0e8;
 
-  --bg: var(--ctp-base);
+  --bg: var(--ctp-mantle);
   --fg: var(--ctp-text);
-  --fg-muted: var(--ctp-overlay1);
-  --fg-subtle: var(--ctp-overlay0);
-  --accent: var(--ctp-sapphire);
+  --fg-muted: var(--ctp-overlay2);
+  --fg-subtle: var(--ctp-overlay1);
+  --fg-subtler: var(--ctp-surface1);
+  --accent: var(--ctp-sky);
   --accent-name: var(--ctp-green);
   --accent-sidebar: var(--ctp-peach);
 }
@@ -41,7 +42,7 @@
 html, body {
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 17px;
-  font-weight: 500;
+  font-weight: 450;
   margin: 0;
   color: var(--fg);
   background-color: var(--bg);
@@ -80,7 +81,7 @@ a:hover {
 hr {
   margin: 0.1em 0;
   height: 2px;
-  background: var(--fg-muted);
+  background: var(--fg-subtler);
   border: 0;
 }
 
@@ -106,21 +107,11 @@ hr {
 }
 
 .sidebar-header {
-  background: var(--accent-name);
-  /* background: linear-gradient( */
-  /*   135deg, */
-  /*   var(--ctp-green), */
-  /*   var(--ctp-green), */
-  /*   var(--ctp-teal), */
-  /*   var(--ctp-sky) */
-  /* ); */
+  border-bottom: solid 3px var(--accent-name);
+  font-weight: 480;
 
-  color: var(--bg);
-  padding: 2px 5px;
-  display: inline-block;
   font-size: 28px;
   margin-bottom: 0.5em;
-  border-radius: 5px;
 }
 
 .sidebar {
@@ -168,7 +159,7 @@ hr {
 }
 
 .post-date {
-  font-weight: 400;
+  font-weight: 450;
 }
 
 .post-text {
@@ -189,7 +180,7 @@ hr {
 
 .blog-date {
   margin: 0.2em 0;
-  font-weight: 400;
+  font-weight: 450;
 }
 
 .blog-image-link, .url-no-highlight {
@@ -241,7 +232,7 @@ ul, ol {
 }
 
 ::selection {
-  background-color: color-mix(in srgb, var(--ctp-mauve) 35%, transparent);
+  background-color: color-mix(in srgb, var(--ctp-sky) 35%, transparent);
 }
 
 .external::after {
@@ -257,6 +248,10 @@ ul, ol {
   mask-size: cover;
   vertical-align: text-top;
   width: 1em;
+}
+
+address {
+  font-style: normal;
 }
 
 @media only screen and (max-width: 800px) {
@@ -280,7 +275,8 @@ ul, ol {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 1px;
+    row-gap: 0.3em;
+    column-gap: 0.1em;
     align-content: flex-start;
     margin: 0.5em 0;
   }
