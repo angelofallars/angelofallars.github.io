@@ -31,9 +31,8 @@
 
   --bg: var(--ctp-base);
   --fg: var(--ctp-text);
-  --fg-muted: var(--ctp-overlay2);
-  --fg-subtle: var(--ctp-overlay1);
-  --fg-subdued: var(--ctp-overlay0);
+  --fg-muted: var(--ctp-overlay1);
+  --fg-subtle: var(--ctp-overlay0);
   --accent: var(--ctp-sapphire);
   --accent-name: var(--ctp-green);
   --accent-sidebar: var(--ctp-peach);
@@ -81,7 +80,7 @@ a:hover {
 hr {
   margin: 0.1em 0;
   height: 2px;
-  background: var(--fg-subtle);
+  background: var(--fg-muted);
   border: 0;
 }
 
@@ -211,11 +210,11 @@ th {
 }
 
 footer, footer a {
-  color: var(--fg-subtle);
+  color: var(--fg-muted);
   text-align: center;
   margin-top: 2.7em;
   margin-bottom: 1.8em;
-  border-bottom-color: var(--fg-subtle);
+  border-bottom-color: var(--fg-muted);
 }
 
 ul, ol {
@@ -226,7 +225,7 @@ ul, ol {
 .cat {
   font-family: source-sans-mono, monospace;
   user-select: none;
-  color: var(--fg-subdued);
+  color: var(--fg-subtle);
 }
 
 .cat-desktop {
@@ -237,7 +236,7 @@ ul, ol {
 .cat-mobile {
   display: none;
   font-size: 11px;
-  color: var(--fg-subtle);
+  color: var(--fg-muted);
   font-weight: 900;
 }
 
