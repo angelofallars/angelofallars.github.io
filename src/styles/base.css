@@ -31,16 +31,19 @@
 
   --bg: var(--ctp-mantle);
   --fg: var(--ctp-text);
-  --fg-muted: var(--ctp-overlay2);
-  --fg-subtle: var(--ctp-overlay1);
-  --fg-subtler: var(--ctp-surface1);
+  --fg-muted: var(--ctp-overlay1);
+  --fg-subtle: var(--ctp-surface2);
+  --fg-subtler: var(--ctp-surface0);
   --accent: var(--ctp-sky);
   --accent-name: var(--ctp-green);
   --accent-sidebar: var(--ctp-peach);
+
+  --sans-font: "IBM Plex Sans";
+  --mono-font: "IBM Plex Mono";
 }
 
 html, body {
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: var(--sans-font), sans-serif;
   font-size: 17px;
   font-weight: 450;
   margin: 0;
@@ -80,7 +83,7 @@ a:hover {
 
 hr {
   margin: 0.1em 0;
-  height: 2px;
+  height: 3px;
   background: var(--fg-subtler);
   border: 0;
 }
@@ -254,6 +257,25 @@ ul, ol {
 
 address {
   font-style: normal;
+}
+
+code {
+  font-family: var(--mono-font), monospace;
+}
+
+p code {
+  font-size: 15px;
+  border: 1px solid var(--ctp-surface1);
+  border-radius: 5px;
+  padding: 0 5px;
+  text-wrap: nowrap;
+}
+
+.astro-code {
+  background-color: var(--bg) !important;
+  font-size: 14px;
+  border-radius: 5px;
+  padding: 0.5em 0.8em;
 }
 
 @media only screen and (max-width: 800px) {
