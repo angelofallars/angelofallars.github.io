@@ -17,14 +17,12 @@ const { title, pubDate, description } = Astro.props.frontmatter || Astro.props;
 const { heroImage } = Astro.props.frontmatter;
 
 function getFirstTwoParagraphs(content) {
-    console.log(content);
     const re = new RegExp("(.|\n)*?\n\n", "gm");
     const found = [...content.matchAll(re)];
-    console.log(found);
+
     const first_paragraph = found[0][0].replace(/[\n\r]/g, " ");
     const second_paragraph = found[1][0].replace(/[\n\r]/g, " ");
-    console.log(first_paragraph);
-    console.log(second_paragraph);
+
     const firstTwoParagraphs = first_paragraph + second_paragraph;
     return removeMd(firstTwoParagraphs); 
 }

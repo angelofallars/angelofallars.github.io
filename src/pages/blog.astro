@@ -7,13 +7,10 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
 	(a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf()
 );
 
-function getFirstParagraph(compiledContent) {
-    console.log(compiledContent);
-    const re = new RegExp("(.|\n)*?\n\n", "gm");
-    const found = [...compiledContent.matchAll(re)];
-    console.log(found);
-    const firstParagraph = found[0][0];
-    return removeMd(firstParagraph);
+function getFirstParagraph(compiledContent: string) {
+    const re = /[\s\S]*?\n\n/;
+    const found = compiledContent.trim().match(re).at(0) || "";
+    return removeMd(found);
 }
 ---
 

@@ -21,9 +21,9 @@
   },
   "homepage": "https://github.com/angelofallars/angelofallars.github.io#readme",
   "dependencies": {
-    "astro": "^1.2.1"
+    "astro": "^5.13.5"
   },
   "devDependencies": {
-    "remove-markdown": "^0.5.0"
+    "remove-markdown": "^0.5.5"
   }
 }
