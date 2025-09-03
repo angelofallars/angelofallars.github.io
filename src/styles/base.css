@@ -264,7 +264,7 @@ code {
 }
 
 p code {
-  font-size: 15px;
+  font-size: 14.5px;
   border: 1px solid var(--ctp-surface1);
   border-radius: 5px;
   padding: 0 5px;
@@ -273,9 +273,9 @@ p code {
 
 .astro-code {
   background-color: var(--bg) !important;
-  font-size: 14px;
+  font-size: 13.5px;
   border-radius: 5px;
-  padding: 0.5em 0.8em;
+  padding: 0em 0.5em;
 }
 
 @media only screen and (max-width: 800px) {
