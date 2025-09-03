@@ -219,14 +219,14 @@ ul, ol {
 }
 
 .cat {
-  font-family: source-sans-mono, monospace;
+  font-family: var(--mono-font), monospace;
   user-select: none;
   color: var(--fg-subtle);
 }
 
 .cat-desktop {
   margin-top: 16px;
-  font-weight: 600;
+  font-weight: 900;
 }
 
 .cat-mobile {
