@@ -145,8 +145,7 @@ We'll create an ice cream type that has three possible flavors, all delicious:
 cookies and cream, coffee, and chocolate.
 
 ```python
-from dataclasses import dataclass, field
-from typing import Literal
+from dataclasses import dataclass
 
 # We define the 'IceCream' type as a union type that can be any
 # of the three ice cream types we defined, with the pipe '|' syntax.
