@@ -151,7 +151,7 @@ from typing import Literal
 # We define the 'IceCream' type as a union type that can be any
 # of the three ice cream types we defined, with the pipe '|' syntax.
 type IceCream = (
-    CookiesAndCreamIceCream | CoffeeIceCream | MintIceCream
+    CookiesAndCreamIceCream | CoffeeIceCream | ChocolateIceCream
 )
 
 
