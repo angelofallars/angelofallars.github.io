@@ -1,13 +1,15 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
 ---
 
 <Layout title="Software Engineer" previewTitle="Angelo Fallaria - Software Engineer">
   <main class="frontpage">
-    <h1 style="margin-top: 0;">
+    <h1 style="margin-top: 0; margin-bottom: 0.5em;">
       Hey there!
     </h1>
-    <p>
+    <Image src="/avatar.webp" class="avatar" alt="Angelo smiling with a black T-shirt" width="125" height="125"/>
+    <p style="margin-top: 0;">
       I'm Angelo, a 22-year-old software engineer and open-source maintainer.
     </p>
 
