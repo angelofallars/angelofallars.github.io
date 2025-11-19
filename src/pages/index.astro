@@ -1,6 +1,10 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { Image } from 'astro:assets';
+
+const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
+	(a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf()
+);
 ---
 
 <Layout title="Software Engineer" previewTitle="Angelo Fallaria - Software Engineer">
@@ -10,39 +14,74 @@ import { Image } from 'astro:assets';
     </h1>
     <Image src="/avatar.webp" class="avatar" alt="Angelo smiling with a black T-shirt" width="125" height="125"/>
     <p style="margin-top: 0;">
-      I'm Angelo, a 22-year-old software engineer and open-source maintainer.
+    I'm Angelo, a 22-year-old software engineer and open-source maintainer.
     </p>
 
     <p>
-      Isn't it fun to explore everything there is to coding?
-      I've dabbled with so many things: back-end, front-end, game dev, functional programming, and compilers.
+      I'm an open-source maintainer at
+      <a href="https://bettergov.ph" target="_blank">BetterGov.ph</a> (featured in <a href="https://newsinfo.inquirer.net/2125012/from-proposal-to-approval-budget-watchers-set-up-tracker">Inquirer</a>),
+      the <a href="https://github.com/angelofallars/htmx-go" target="_blank">htmx-go</a> library,
+      and <a href="https://github.com/Simple-Station/Einstein-Engines" target="_blank">Einstein Engines</a>, a fork of the game <a href="https://github.com/space-wizards/space-station-14" target="_blank">Space Station 14</a>.
+    </p>
+
+    <p style="margin-top: 0;">
+    I started programming when I was 15, and since then I've dabbled in so many domains on actual projects: web dev (backend/frontend), mobile dev, Linux distro dev, parsers/compilers and even game dev.
     </p>
 
     <p>
-      There are some open-source projects I maintain,
-      like the <a href="https://github.com/angelofallars/htmx-go" target="_blank">htmx-go</a> library, and <a href="https://github.com/Simple-Station/Einstein-Engines" target="_blank">Einstein Engines</a>, a fork of the game <a href="https://github.com/space-wizards/space-station-14" target="_blank">Space Station 14</a>.
+      I am obsessed with developer workflow efficiency.
+      To that end, I've used <a href="https://neovim.io/" target="_blank">Neovim</a> as my editor for 4+ years, on the <a href="https://ghostty.org" target="_blank">Ghostty</a> terminal with <a href="https://github.com/tmux/tmux/wiki" target="_blank">tmux</a> to manage terminal sessions.
+    </p>
+
+    <p>
+      On my <a href="https://github.com/kata0510/Lily58" target"_blank">Lily58</a> split mechanical keyboard I use the <a href="https://colemakmods.github.io/mod-dh/" target="_blank">Colemak-DH</a> keyboard layout to maximize home row usage, typing a peak of 146 words per minute on Monkeytype.
+    </p>
+
+    <p>
+      I love tiling window managers: on <a href="https://artixlinux.org/" target="_blank">Artix Linux</a> (based on <a href="https://archlinux.org/" target="_blank">Arch</a> btw) I use <a href="https://hypr.land/" target="_blank">Hyprland</a> + <a href="https://waybar.org/" target="_blank">Waybar</a> and on macOS I use <a href="https://github.com/nikitabobko/AeroSpace" target="_blank">AeroSpace</a>.
     </p>
 
     <h2>Interests</h2>
 
     <ul>
-      <li>Linux</li>
       <li>Neovim</li>
-      <li>Backend development</li>
-      <li>Interpreters and compilers</li>
-      <li>Proton for Linux gaming</li>
+      <li>Terminals and CLI tools</li>
+      <li>Linux</li>
+      <li>Matcha drinks</li>
+      <li>Pop rock</li>
+      <li>Software engineering articles and deep dives
+        <ul>
+          <li>
+            I especially like reading <a href="https://www.pragmaticengineer.com/" target="_blank">The Pragmatic Engineer</a>!
+          </li>
+        </ul>
+      </li>
     </ul>
-
-    <h2>Blog</h2>
-
-    You can find my blog <a href="/blog/">here</a>, where I write about software engineering and optimizing developer workflows.
-
-    <h2>Contact me</h2>
 
     <p>
       Want to reach out? Feel free to send an email at <a href="mailto:ba.fallaria@gmail.com">ba.fallaria@gmail.com</a>.
-      Or message me on Discord: my username is <code>angelo.codes</code>.
     </p>
+
+    <h2>Blog</h2>
+
+        <div class="posts">
+            {posts.map((post) => (
+            <div class="post">
+                <time datetime={post.frontmatter.pubDate} class="post-date">
+                    {new Date(post.frontmatter.pubDate).toLocaleDateString('en-us', {
+                    year: 'numeric',
+                    month: 'short',
+                    day: 'numeric',
+                    })}
+                </time>
+
+                <div class="post-text">
+                    <a href={post.url} class="post-title">{post.frontmatter.title}</a>
+                </div>
+
+            </div>
+            ))}
+        </div>
 
   </main>
 </Layout>
