@@ -99,7 +99,7 @@ a:has(code) {
 
 hr {
   margin: 0.1em 0;
-  height: 3px;
+  height: 2px;
   background: var(--fg-subtler);
   border: 0;
 }
@@ -278,8 +278,7 @@ address {
 }
 
 .avatar {
-  border: 1px solid var(--ctp-surface2);
-  border-radius: 5px;
+  border-radius: 4px;
   float: right;
   margin-left: 1em;
   margin-bottom: 0.5em;
