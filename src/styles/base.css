@@ -306,4 +306,6 @@ h6 code {
   font-size: 13.5px;
   border-radius: 5px;
   padding: 0.25em 0.5em;
+  overflow-x: auto;
+  max-width: 90vw;
 }
