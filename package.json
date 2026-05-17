@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/angelofallars/angelofallars.github.io#readme",
   "dependencies": {
+    "@astrojs/rss": "^4.0.18",
     "astro": "^5.13.5"
   },
   "devDependencies": {

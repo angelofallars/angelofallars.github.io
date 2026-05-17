@@ -97,6 +97,10 @@ a:has(code) {
   padding-bottom: 1px;
 }
 
+blockquote {
+  margin: 15px 30px;
+}
+
 hr {
   margin: 0.1em 0;
   height: 2px;
@@ -169,7 +173,7 @@ hr {
 .posts {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 14px;
 }
 
 .post {
